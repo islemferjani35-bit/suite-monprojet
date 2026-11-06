@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact - Restaurant</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <h1>Restaurant Cascade</h1>
+    <h2>Contactez-nous / Inscrivez-vous</h2>
+</header>
+<nav>
+    <a href="index.html">Accueil</a>
+    <a href="contact.html">Contact</a>
+</nav>
+<main>
+    <h2>Formulaire de contact</h2>
+    <form>
+        <fieldset>
+            <legend>1 - Vos coordonnées</legend>
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom"required autofocus maxlength="50"placeholder="Votre nom">
+            <br><br>
+
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom"required maxlength="50" placeholder="Votre prénom">
+            <br><br>
+
+            <label for="date">Date de naissance :</label>
+            <input type="date" id="date" name="date">
+            <br><br>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email"required placeholder="exemple@email.com">
+            <br><br>
+
+            <label for="site">Site web :</label>
+            <input type="url" id="site" name="site"value="http://www." placeholder="https://monsite.com">
+            <br><br>
+
+            <label for="secret">Code secret :</label>
+            <input type="password" id="secret" name="secret"minlength="6" maxlength="20">
+            <br><br>
+
+            Genre :
+            <input type="radio" name="genre" id="homme"value="Homme" checked>
+            <label for="homme">Homme</label>
+
+            <input type="radio" name="genre" id="femme"value="Femme">
+            <label for="femme"><label>Femme</label>
+            <br><br>
+
+            <label for="pays">Pays :</label>
+            <select id="pays" name="pays">
+                <option>Tunisie</option>
+                <option>France</option>
+                <option>Algérie</option>
+                <option>Maroc</option>
+                <option>Autre</option>
+            </select>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>2 - Informations complémentaires</legend>
+
+            <label for="tel">Téléphone :</label>
+            <input type="tel" id="tel" name="tel"pattern="[0-9]{8}" placeholder="12345678">
+            <br><br>
+
+            <label for="adresse">Adresse :</label>
+            <input type="text" id="adresse" name="adresse"placeholder="Votre adresse">
+            <br><br>
+
+            <label for="postal">Code postal :</label>
+            <input type="text" id="postal" name="postal"value="1000" maxlength="4">
+            <br><br>
+
+            <label for="semestre">Semestre :</label>
+            <select id="semestre" name="semestre">
+                <option>S1</option>
+                <option>S2</option>
+                <option>S3</option>
+                <option>S4</option>
+            </select>
+            <br><br>
+
+            <label for="region">Région préférée :</label>
+            <select id="region" name="region">
+                <option>Tunis</option>
+                <option>Sousse</option>
+                <option>Sfax</option>
+                <option>Djerba</option>
+                <option>Tozeur</option>
+            </select>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>3 - Goûts et centres d'intérêt</legend>
+            <p>Quels plats aimez-vous ?</p>
+
+            <input type="checkbox" id="culture"name="interets[]" value="Culture" checked>
+            
+            <label for="culture">Culture</label>
+            <input type="checkbox" id="gastronomie"name="interets[]" value="Gastronomie">
+            
+            <label for="gastronomie">Gastronomie</label>
+            <input type="checkbox" id="plage"name="interets[]" value="Plage">
+            
+            <label for="plage">Plage</label>
+            <input type="checkbox" id="desert"name="interets[]" value="Désert">
+            
+            <label for="desert">Désert</label>
+            <input type="checkbox" id="histoire"name="interets[]" value="Histoire">
+            
+            <label for="histoire">Histoire</label>
+            <br><br>
+            
+            <label for="html">Niveau en HTML :</label>
+            <input type="range" id="html" name="html"min="0" max="100" step="10">
+            <br><br>
+            
+            <label for="note">Note du restaurant :</label>
+            <input type="number" id="note" name="note"min="1" max="10" step="1">
+            <br><br>
+            
+            <label for="message">Votre commentaire :</label>
+            <br>
+            <textarea id="message" name="message"rows="5" cols="40"placeholder="Donnez votre avis sur notre restaurant"></textarea>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>4 - Photo</legend>
+            <label for="photo">Photo de profil :</label>
+            <input type="file" id="photo" name="photo" accept="image/*">
+        </fieldset>
+        <br>
+        <input type="submit" value="Envoyer">
+        <input type="reset" value="Effacer">
+    </form>
+    <p><a href="index.html">Retour à l'accueil</a></p>
+</main>
+<footer>
+    <p>© 2026 Restaurant Cascade - Tous droits réservés</p>
+</footer>
+</body>
+</html>

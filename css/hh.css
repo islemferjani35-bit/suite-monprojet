@@ -1,0 +1,283 @@
+
+#bb {background-color: rgb(193, 185, 175);
+    font-family: Arial;
+    margin: 0;}
+
+
+#b1 {background-color: #4b2e2e;
+    color: white;
+    text-align: center;
+    padding: 25px;}
+
+#b2 {font-size: 40px;}
+
+#b3 {font-weight: normal;}
+
+#nav {background-color: #2f1b1b;
+    text-align: center;
+    padding: 15px;}
+
+#nav a {color: white;
+       text-decoration: none;
+       margin: 20px;}
+
+#nav a:hover {color: #e5b96b;}
+
+
+#accueil {text-align: center;
+          padding: 30px;}
+
+#accueil h2 {color: #4b2e2e;}
+
+#tableau {margin: 30px auto;
+         width: 80%;}
+
+#tableau td { padding: 20px;}
+
+#img1,
+#img2 {
+    width: 300px;
+    height: 200px;}
+
+#i1,
+#i2 {color: #4b2e2e;}
+
+#entrees {background-color: white;
+          margin: 20px;
+        padding: 25px;}
+
+#entrees h1 {color: #4b2e2e;}
+
+#plats {background-color: white;
+        margin: 20px;
+        padding: 25px;}
+
+#plats h1 {color: #4b2e2e;}
+
+#menu {background-color: white;
+       margin: 20px;
+       padding: 25px;}
+
+#menu h1 {color: #4b2e2e;}
+
+#footer {background-color: #4b2e2e;
+        color: white;
+        text-align: center;
+        padding: 25px;}
+
+
+
+/* ARRIÈRE-PLAN */
+
+#bb {
+    background-image: url("../images/arriere plan.webp");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial;
+    margin: 0;
+}
+
+
+/* CONTENEUR PRINCIPAL */
+
+#restaurant {
+    background-color: rgba(255, 255, 255, 0.90);
+    width: 80%;
+    margin: 30px auto;
+    padding: 30px;
+}
+
+
+/* TITRE PRINCIPAL */
+
+#titre {
+    text-align: center;
+    color: #4b2e2e;
+    font-size: 40px;
+}
+
+
+/* TITRES DES SECTIONS */
+
+#titre1,
+#titre2,
+#titre3,
+#titre4,
+#titre5,
+#titre6,
+#titre7 {
+    color: #4b2e2e;
+    border-bottom: 2px solid #4b2e2e;
+    padding-bottom: 8px;
+}
+
+
+/* LISTES */
+
+#liste1,
+#liste2,
+#liste3,
+#liste4,
+#liste5,
+#liste6,
+#liste7 {
+    background-color: white;
+    padding: 20px 40px;
+}
+
+
+/* ELEMENTS DE LA LISTE */
+
+li {
+    margin: 10px;
+}
+
+
+/* PLAT */
+
+.plat {
+    position: relative;
+    cursor: pointer;
+    padding: 10px;
+}
+
+
+/* EFFET QUAND ON PASSE LA SOURIS */
+
+.plat:hover {
+    background-color: #f5e8d0;
+    border-radius: 8px;
+}
+
+
+/* IMAGE CACHÉE */
+
+.plat img {
+    display: none;
+
+    position: absolute;
+
+    width: 220px;
+    height: 150px;
+
+    object-fit: cover;
+
+    left: 450px;
+    top: -60px;
+
+    border-radius: 12px;
+
+    border: 3px solid #4b2e2e;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+
+    z-index: 10;
+}
+
+
+/* IMAGE APPARAÎT AU SURVOL */
+
+.plat:hover img {
+    display: block;
+}
+
+
+/* POISSON */
+
+#poisson {
+    color: #8b4513;
+}
+
+
+/* INFORMATION */
+
+#info {
+    font-weight: bold;
+}
+
+
+/* CONSEIL */
+
+#conseil {
+    background-color: #f1dfb8;
+    padding: 15px;
+    color: #4b2e2e;
+}
+
+
+/* PETIT EFFET SUR LES IMAGES */
+
+.plat img {
+    transition: transform 0.3s;
+}
+
+
+/* AGRANDISSEMENT DE L'IMAGE */
+
+.plat:hover img {
+    transform: scale(1.05);
+}
+
+
+#réservée{
+    background-image: url("../images/reserved.jpg");
+    color: #b46c31;
+    font-size: x-large;
+    background-size: cover;
+    padding: 40px;}
+input{
+    padding: 10px;
+}
+#livraison{
+    background-image: url("../images/deli.webp");
+    color: #b46c31;
+    font-size: large;
+    background-size: cover;
+    padding: 40px;}
+
+#avis {
+    width: 450px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+text-align: center;}
+
+#titre-avis {
+    text-align: center;
+    color: red;}
+
+#description {
+    text-align: center;}
+
+#form-avis {
+    display: flex;
+    flex-direction: column;}
+
+#label-nom,
+#label-note,
+#label-message {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;}
+
+#nom,
+#note,
+#message {
+    padding: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    border-radius: 5px;}
+
+#message {
+    height: 120px;}
+
+#bouton-avis {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;}
