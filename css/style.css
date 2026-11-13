@@ -7,19 +7,103 @@ body{
 h1{ 
     color: rgb(167, 109, 109);
     font-family:cursive;
-    text-align: center;
+    text-align:center;
 }
 
 h2,h3{
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: large;
     font-weight:bold;
+    
 }
 
 form{
    font-size: medium; 
    line-height: normal;
 }
+a{
+    color: aquamarine;
+    text-decoration: none;
+}
+section{
+    background-color:antiquewhite;
+    border:solid 1px;
+    padding:10px;
+    margin:10px;
+}
+#photo{
+    width:auto; 
+    max-width:auto; 
+    height:auto; 
+    border-radius:initial; 
+    align-items:center; 
+}
+#nav {background-color: #2f1b1b;
+    text-align: center;
+    padding: 15px;}
+
+/* Cartes des produits */
+.liste-produits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Chaque carte produit */
+.produit {
+    width: 250px;
+    padding: 10px;
+    background-color: antiquewhite;
+    border: 1px solid black;
+    text-align: center;
+}
+
+/* Images */
+.produit img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Navigation */
+#nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Tablette */
+@media (max-width: 768px) {
+    .produit {
+        width: 45%;
+    }
+}
+
+/* Téléphone */
+@media (max-width: 480px) {
+    .liste-produits {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .produit {
+        width: 90%;
+    }
+
+    #nav {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
+ 
+
+
 
 
 

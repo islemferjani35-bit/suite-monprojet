@@ -1,0 +1,76 @@
+* 1. Règles générales */ 
+* { 
+    box-sizing: border-box; 
+} 
+ 
+body { 
+    margin: 0; 
+    font-family: Arial, sans-serif; 
+    background-color: #f4f6f8; 
+} 
+ 
+/* 2. En-tête */ 
+.entete { 
+    padding: 25px; 
+    text-align: center; 
+    background-color: #24527a; 
+    color: white; 
+} 
+ 
+/* 3. Barre de navigation */ 
+.liste-produits {
+    /* display: flex; */
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    
+}
+ 
+.navigation a { 
+    color: white; 
+    text-decoration: none; 
+    padding: 8px 12px; 
+} 
+ 
+/* 4. Liste des cartes */ 
+.liste-produits { 
+     align-items: center;
+    flex-wrap: nowrap; 
+    justify-content: center; 
+    
+    gap: 35px; 
+    padding: 20px; 
+} 
+ 
+/* 5. Chaque carte */ 
+.carte-produit { 
+    flex: 1 1 250px; 
+    max-width: 320px; 
+    padding: 15px; 
+    background-color: white; 
+    border: 1px solid #cccccc; 
+    border-radius: 8px; 
+} 
+ 
+/* 6. Images */ 
+.carte-produit img { 
+    width: 100%; 
+height: 180px; 
+object-fit: cover; 
+} 
+/* 7. Adaptation aux petits écrans */ 
+@media (max-width: 800px) { 
+.navigation { 
+flex-direction: column; 
+align-items: center; 
+} 
+.liste-produits { 
+flex-direction: column; 
+align-items: stretch; 
+} 
+.carte-produit { 
+max-width: 100%; 
+} 
+} 
